@@ -44,7 +44,7 @@ def merge(lista, inicio, meio, fim):
             verifica_primo(lista[k])
             j = j + 1
 
-any_numbers = random.sample(range(1, 1000000000), 10000000)
+any_numbers = random.sample(range(1, 1000000000), 1000000)
 
 if __name__ == '__main__':
     lista = any_numbers
@@ -53,5 +53,5 @@ if __name__ == '__main__':
     mergesort(lista)
     fim = time.time()
     
-    print(len(primos))
     print('O tempo de execução é: ', fim - inicio)
+    
